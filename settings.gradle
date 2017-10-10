@@ -1,0 +1,5 @@
+includeBuild('./subst') {
+    dependencySubstitution {
+        substitute module('com.jetbrains.intellij.idea:ideaIC:LATEST-EAP-SNAPSHOT') with project(':')
+    }
+}

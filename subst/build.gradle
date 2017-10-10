@@ -1,0 +1,9 @@
+apply plugin:  "base"
+
+task makeZip(type: Zip) {
+    from file("build.txt")
+}
+
+artifacts {
+    "default" makeZip
+}
